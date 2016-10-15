@@ -1,0 +1,22 @@
+{
+  "name": "lab5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegoari24/apm-5-prueba.git"
+  },
+  "keywords": [
+    "ionic"
+  ],
+  "author": "diegoari24",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diegoari24/apm-5-prueba/issues"
+  },
+  "homepage": "https://github.com/diegoari24/apm-5-prueba#readme"
+}
