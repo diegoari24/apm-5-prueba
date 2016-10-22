@@ -9,51 +9,52 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Product = (function () {
-    function Product() {
+var Ride = (function () {
+    function Ride() {
     }
-    return Product;
+    return Ride;
 }());
-exports.Product = Product;
+exports.Ride = Ride;
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = "Mis productos";
-        this.products = PRODUCTS;
+        this.title = "calculadora";
+        this.airport = 3900;
+        this.app = 700;
+        this.units = 50;
+        this.festive = 1900;
+        this.default = 4100;
     }
+    //rides: Ride[] = RIDES;
+    AppComponent.prototype.onSelect = function (ride) {
+        this.selected = ride;
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            templateUrl: 'app/templates/product.html'
+            templateUrl: 'app/templates/ride.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
-var PRODUCTS = [
+/*
+const RIDES: Ride[] = [
     {
-        id: 1,
-        name: "Samsung galaxy 8",
-        description: "telefono que explota",
-        type: "smartphone",
-        price: 1500000,
-        quantity: 20
+        airport: 3900
     },
     {
-        id: 2,
-        name: "Samsung galaxy 10",
-        description: "telefono que explota",
-        type: "smartphone",
-        price: 1500000,
-        quantity: 20
+        app: 700
     },
     {
-        id: 3,
-        name: "Samsung galaxy 20",
-        description: "telefono que explota",
-        type: "smartphone",
-        price: 1500000,
-        quantity: 20
-    }
+        units: 50
+    },
+    {
+       festive: 1900
+    },
+    {
+        default: 4100
+    },
 ];
+*/
 //# sourceMappingURL=app.component.js.map

@@ -9,51 +9,48 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Product = (function () {
-    function Product() {
+var User = (function () {
+    function User() {
     }
-    return Product;
+    return User;
 }());
-exports.Product = Product;
+exports.User = User;
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = "Mis productos";
-        this.products = PRODUCTS;
+        this.title = "Mis usuarios";
+        this.users = USERS;
     }
+    AppComponent.prototype.onSelect = function (user) {
+        this.selected = user;
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            templateUrl: 'app/templates/product.html'
+            templateUrl: 'app/templates/user.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
-var PRODUCTS = [
+var USERS = [
     {
         id: 1,
-        name: "Samsung galaxy 8",
-        description: "telefono que explota",
-        type: "smartphone",
-        price: 1500000,
-        quantity: 20
+        name: "user#1",
+        address: "#123",
+        phone: 12345
     },
     {
         id: 2,
-        name: "Samsung galaxy 10",
-        description: "telefono que explota",
-        type: "smartphone",
-        price: 1500000,
-        quantity: 20
+        name: "user#2",
+        address: "#123",
+        phone: 12345
     },
     {
         id: 3,
-        name: "Samsung galaxy 20",
-        description: "telefono que explota",
-        type: "smartphone",
-        price: 1500000,
-        quantity: 20
-    }
+        name: "user#3",
+        address: "123",
+        phone: 12345
+    },
 ];
 //# sourceMappingURL=app.component.js.map
