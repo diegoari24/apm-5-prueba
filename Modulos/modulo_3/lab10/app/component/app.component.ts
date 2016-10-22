@@ -1,26 +1,5 @@
 import { Component } from '@angular/core';
-
- export class User {
- 	id: number;
- 	name: string;
- 	address: string;
- 	phone: number;
- }
-
-@Component({
-  selector: 'my-app',
-  templateUrl: 'app/templates/user.html'
-})
-export class AppComponent {
-
-	title: string = "Mis usuarios";
-	selected: User;
-	users: User[] = USERS;
-	onSelect(user: User) {
-		this.selected = user;
-	}
-}
-
+import { User } from '../model/user';
 const USERS: User[] = [
     {
         id: 1,
@@ -44,3 +23,17 @@ const USERS: User[] = [
 	
     },
 ];
+
+@Component({
+  selector: 'my-app',
+  templateUrl: 'app/templates/user.html'
+})
+export class AppComponent {
+
+    title: string = "Mis usuarios";
+    selected: User;
+    users: User[] = USERS;
+    onSelect(user: User) {
+        this.selected = user;
+    }
+}

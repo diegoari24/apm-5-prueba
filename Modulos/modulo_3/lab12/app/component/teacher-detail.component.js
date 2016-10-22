@@ -9,48 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var User = (function () {
-    function User() {
+var teacher_1 = require('../model/teacher');
+var TeacherDetailComponent = (function () {
+    function TeacherDetailComponent() {
     }
-    return User;
-}());
-exports.User = User;
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = "Mis usuarios";
-        this.users = USERS;
-    }
-    AppComponent.prototype.onSelect = function (user) {
-        this.selected = user;
-    };
-    AppComponent = __decorate([
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', teacher_1.Teacher)
+    ], TeacherDetailComponent.prototype, "teacher", void 0);
+    TeacherDetailComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'app/templates/user.html'
+            selector: 'teacher-detail',
+            templateUrl: 'app/templates/teacher-detail.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], TeacherDetailComponent);
+    return TeacherDetailComponent;
 }());
-exports.AppComponent = AppComponent;
-var USERS = [
-    {
-        id: 1,
-        name: "user#1",
-        address: "#123",
-        phone: 12345
-    },
-    {
-        id: 2,
-        name: "user#2",
-        address: "#123",
-        phone: 12345
-    },
-    {
-        id: 3,
-        name: "user#3",
-        address: "123",
-        phone: 12345
-    },
-];
-//# sourceMappingURL=app.component.js.map
+exports.TeacherDetailComponent = TeacherDetailComponent;
+//# sourceMappingURL=teacher-detail.component.js.map

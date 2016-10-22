@@ -9,27 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Product = (function () {
-    function Product() {
-    }
-    return Product;
-}());
-exports.Product = Product;
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = "Mis productos";
-        this.products = PRODUCTS;
-    }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'app/templates/product.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
-}());
-exports.AppComponent = AppComponent;
 var PRODUCTS = [
     {
         id: 1,
@@ -56,4 +35,22 @@ var PRODUCTS = [
         quantity: 20
     }
 ];
+var AppComponent = (function () {
+    function AppComponent() {
+        this.title = "Mis productos";
+        this.products = PRODUCTS;
+    }
+    AppComponent.prototype.onSelect = function (product) {
+        this.selected = product;
+    };
+    AppComponent = __decorate([
+        core_1.Component({
+            selector: 'my-app',
+            templateUrl: 'app/templates/product.html'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], AppComponent);
+    return AppComponent;
+}());
+exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

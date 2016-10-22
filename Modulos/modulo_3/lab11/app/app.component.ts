@@ -1,12 +1,5 @@
 import { Component } from '@angular/core';
-
- export class Ride {
- 	airport: number;
-    app: number;
- 	units: number;
- 	festive: number;
- 	default: number;
- }
+import { Ride } from './model/ride';
 
 @Component({
   selector: 'my-app',
@@ -26,6 +19,9 @@ export class AppComponent {
      units: number = 50;
      festive: number = 1900;
      default: number = 4100;
+
+
+    
 }
 
 
