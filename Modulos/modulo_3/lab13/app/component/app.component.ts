@@ -8,11 +8,12 @@ import {ProductService} from '../service/product.service';
 })
 export class AppComponent implements OnInit {
 
-	constructor(private productService: ProductService){}
-
 	title: string = "Mis productos";
 	products: Product[];
 
+	constructor(private productService: ProductService){}
+
+	
 	ngOnInit(){
 		this.productService.getProducts()
 		.then(products => this.products = products)
