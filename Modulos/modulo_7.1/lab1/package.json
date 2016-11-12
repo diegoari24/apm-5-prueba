@@ -10,7 +10,10 @@
     "emulate:before": "build",
     "deploy:before": "build",
     "build:before": "build",
-    "run:before": "build"
+    "run:before": "build",
+    "build": "ionic-app-scripts build",
+    "serve": "ionic-app-scripts serve",
+    "watch": "ionic-app-scripts watch"    
   },
   "dependencies": {
     "@angular/common": "2.1.1",

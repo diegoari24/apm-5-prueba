@@ -1,5 +1,5 @@
 {
-  "name": "lab9",
+  "name": "lab14",
   "version": "0.1.0",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",

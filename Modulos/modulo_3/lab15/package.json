@@ -1,5 +1,5 @@
 {
-  "name": "lab9",
+  "name": "lab15",
   "version": "0.1.0",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
@@ -37,6 +37,14 @@
     "concurrently": "^3.0.0",
     "lite-server": "^2.2.2",
     "typescript": "^2.0.3",
-    "typings":"^1.4.0"
-  }
+    "typings": "^1.4.0"
+  },
+  "main": "systemjs.config.js",
+  "repository": {
+    "type": "git",
+    "url": "github"
+  },
+  "author": "hbk",
+  "license": "MIT",
+  "description": ""
 }

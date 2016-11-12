@@ -17,6 +17,26 @@
   </head>
   <!-- 3. Display the application -->
   <body>
-    <my-app>Loading...</my-app>
+    <my-app>USERS AND PRODUCTS...
+<div *ngIf="product">
+    <hr />
+    <label>Name: </label><br />
+    <input [(ngModel)]="product.name" placeholder="name"><br />
+    <label>Description: </label><br />
+    <textarea [(ngModel)]="product.description" placeholder="description"></textarea><br />
+    <label>Type: </label><br />
+    <input [(ngModel)]="product.type" placeholder="tipo"><br />
+    <label>Price: </label><br />
+    <input [(ngModel)]="product.price" placeholder="prcio"><br />
+    <label>Quantity: </label><br />e
+    <input [(ngModel)]="product.quantity" placeholder="cantidad"><br />
+    <button (click)="save()">Save</button>
+    <button (click)="save()">Obtener</button>
+
+    <a href="http://138.68.0.83:7070/api/v1/product/list">Visita HTMLpoint</a>
+</div>
+
+
+    </my-app>
   </body>
 </html>

@@ -7,4 +7,12 @@ import {Component} from '@angular/core';
 
 export class AppComponent {
 	title: string = "los productos del Año";
+	
+	function obtener(){
+
+
+
+	}
+
+	
 }
