@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<div *ngIf="selected">
+   <h1>{{ product.name }}</h1>
+    <h3>id: {{product.id}}</h3>
+    <h3>type: {{product.type}}</h3>
+    <h3>quantity: {{product.quantity}}</h3>
+    <h3>price: {{product.price}}</h3>
+    <h3>list: {{list.loadList()}}</h3>
+</div>
+ 
+    <label>id: </label><br />
+    <textarea [(ngModel)]="product.id" placeholder="id"></textarea><br />
+    <label>id: </label><br />
+    <textarea [(ngModel)]="product.name" placeholder="name"></textarea><br />
+    <label>name: </label><br />
+    <textarea [(ngModel)]="product.type" placeholder="type"></textarea><br />
+    <label>type: </label><br />
+    <textarea [(ngModel)]="product.quantity" placeholder="quantity"></textarea><br />
+    <label>quantity: </label><br />
+    <textarea [(ngModel)]="product.price" placeholder="price"></textarea><br />
+    <label>price: </label><br />
+   <!-- <textarea [(ngModel)]="list.loadList()" placeholder="list"></textarea><br />
+    <label>list: </label><br /> -->
+
+  <p>
+    <button ion-button color="light">Light</button>
+  </p>
+
+  <p>
+    <button ion-button (click)="loadInfo()">Default</button>
+  </p>
+
+  <p>
+    <button ion-button color="secondary">Secondary</button>
+  </p>
+
+  <p>
+    <button ion-button color="danger" block round>Danger</button>
+  </p>
+
+  <p>
+    <button ion-button color="dark">Dark</button>
+  </p>
+  <p>
+    <button ion-button color="dark">Dark</button>
+  </p>
+</ion-content>
